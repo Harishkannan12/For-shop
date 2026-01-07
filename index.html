@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>South Spice - South Indian Restaurant</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Sticky Navigation Bar -->
+  <header class="header">
+    <nav class="navbar container">
+      <div class="logo">
+        <span class="logo-mark">AK</span>
+        <span class="logo-text">AAYA KADAI</span>
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu &amp; Billing</a></li>
+        <li><a href="#cart">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home / Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <div class="hero-text">
+        <h1>Authentic South Indian Flavours</h1>
+        <p>
+          Freshly steamed idlis, crispy dosas, and aromatic sambar – crafted with
+          traditional recipes and served with love.
+        </p>
+        <a href="#menu" class="btn btn-primary">View Menu &amp; Start Billing</a>
+      </div>
+      <div class="hero-highlight">
+        <div class="highlight-card">
+          <p class="highlight-title">Today's Special</p>
+          <p class="highlight-item">Dosa</p>
+          <p class="highlight-price">₹50</p>
+          <p class="highlight-note">Golden, crispy dosa served with sambar and chutneys.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu & Billing Section -->
+  <main id="menu" class="menu-section container">
+    <header class="section-header">
+      <h2>Menu &amp; Billing</h2>
+      <p>Select your favourite dishes and add them to the cart to generate the bill.</p>
+    </header>
+
+    <!-- Menu Grid -->
+    <section class="menu-grid" aria-label="Menu items">
+      <!-- Menu item cards generated statically in HTML -->
+
+      <!-- Idly -->
+      <article class="menu-card" data-id="idly" data-name="Idly" data-price="30">
+        <div class="menu-image-wrapper">
+          <img
+            src="/istockphoto-1145169012-612x612.jpg"
+            alt="Plate of South Indian idly with chutney and sambar" class="menu-image" loading="lazy"
+            onerror="this.src='https://via.placeholder.com/800x600/f97316/ffffff?text=Idly+%E2%82%B930'">
+        </div>
+        <div class="menu-body">
+          <h3 class="menu-title">Idly</h3>
+          <p class="menu-desc">Soft, steamed rice cakes served with coconut chutney and hot sambar.</p>
+          <div class="menu-footer">
+            <span class="menu-price">₹30</span>
+            <button class="btn btn-outline add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Dosa -->
+      <article class="menu-card" data-id="dosa" data-name="Dosa" data-price="50">
+        <div class="menu-image-wrapper">
+          <img
+            src="/side-view-isometric-angle-crispy-600nw-2600398075.webp"
+            alt="Crispy South Indian dosa with chutneys" class="menu-image" loading="lazy"
+            onerror="this.src='https://via.placeholder.com/800x600/f97316/ffffff?text=Dosa+%E2%82%B950'">
+        </div>
+        <div class="menu-body">
+          <h3 class="menu-title">Dosa</h3>
+          <p class="menu-desc">Golden, crispy dosa served with sambar and a trio of chutneys.</p>
+          <div class="menu-footer">
+            <span class="menu-price">₹50</span>
+            <button class="btn btn-outline add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Pongal -->
+      <article class="menu-card" data-id="pongal" data-name="Pongal" data-price="60">
+        <div class="menu-image-wrapper">
+          <img
+            src="/pongal.jpg"
+            alt="South Indian pongal served in a bowl" class="menu-image" loading="lazy"
+            onerror="this.src='https://via.placeholder.com/800x600/f97316/ffffff?text=Pongal+%E2%82%B960'">
+        </div>
+        <div class="menu-body">
+          <h3 class="menu-title">Pongal</h3>
+          <p class="menu-desc">Comforting rice and lentil dish tempered with ghee, pepper, and cashews.</p>
+          <div class="menu-footer">
+            <span class="menu-price">₹60</span>
+            <button class="btn btn-outline add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Vada -->
+      <article class="menu-card" data-id="vada" data-name="Vada" data-price="25">
+        <div class="menu-image-wrapper">
+          <img src="/vada.jpeg"
+            
+            alt="Crispy South Indian vada served with chutney and sambar" class="menu-image" loading="lazy"
+            onerror="this.src='https://via.placeholder.com/800x600/f97316/ffffff?text=Vada+%E2%82%B925'">
+        </div>
+        <div class="menu-body">
+          <h3 class="menu-title">Vada</h3>
+          <p class="menu-desc">Crispy lentil fritters, perfect with coconut chutney and sambar.</p>
+          <div class="menu-footer">
+            <span class="menu-price">₹25</span>
+            <button class="btn btn-outline add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Sambar -->
+      <article class="menu-card" data-id="sambar" data-name="Sambar" data-price="20">
+        <div class="menu-image-wrapper">
+          <img
+            src="/Sambar-Recipe.jpg"
+            alt="Bowl of South Indian sambar" class="menu-image" loading="lazy"
+            onerror="this.src='https://via.placeholder.com/800x600/f97316/ffffff?text=Sambar+%E2%82%B920'">
+        </div>
+        <div class="menu-body">
+          <h3 class="menu-title">Sambar</h3>
+          <p class="menu-desc">Flavorful lentil-based vegetable stew with a fragrant spice blend.</p>
+          <div class="menu-footer">
+            <span class="menu-price">₹20</span>
+            <button class="btn btn-outline add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- Cart / Order Summary Section -->
+  <section id="cart" class="cart-section">
+    <div class="cart-container container">
+      <header class="section-header">
+        <h2>Cart / Order Summary</h2>
+        <p>Review your items, adjust quantities, and confirm your order.</p>
+      </header>
+
+      <div class="cart-layout">
+        <!-- Cart Items -->
+        <div class="cart-items-wrapper">
+          <div class="cart-header-row">
+            <span>Item</span>
+            <span>Qty</span>
+            <span>Price</span>
+            <span>Total</span>
+            <span>Action</span>
+          </div>
+          <div class="cart-items" aria-live="polite">
+            <!-- Cart items will be dynamically rendered here -->
+          </div>
+          <p class="cart-empty">Your cart is currently empty. Add some delicious food from the menu!</p>
+        </div>
+
+        <!-- Cart Summary -->
+        <aside class="cart-summary">
+          <h3>Bill Details</h3>
+          <div class="summary-row">
+            <span>Total Amount</span>
+            <span id="itemsTotal">₹0</span>
+          </div>
+          <div class="summary-row summary-grand">
+            <span>Grand Total</span>
+            <span id="grandTotal">₹0</span>
+          </div>
+
+          <!-- QR Code for Payment -->
+          <div class="qr-code-container">
+            <div class="qr-header">
+              <div class="qr-merchant-info">
+                <div class="merchant-icon">AK</div>
+                <span class="merchant-name">AAYA KADAI</span>
+              </div>
+            </div>
+            <div id="qrCode" class="qr-code-wrapper">
+              <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=upi://pay?pa=harishkannan1813-1@okicici&pn=South%20Spice%20Restaurant&am=0&cu=INR" alt="UPI QR Code" id="qrCodeImage" class="qr-code-image">
+            </div>
+            <p class="qr-upi-id">UPI ID: harishkannan1813-1@okicici</p>
+            <p class="qr-amount" id="qrAmount">Total Amount: ₹0</p>
+            <p class="qr-instruction">Scan to pay with any UPI app</p>
+          </div>
+
+          <button id="checkoutBtn" class="btn btn-primary btn-full" disabled>Proceed to Checkout</button>
+          <button id="clearCartBtn" class="btn btn-ghost btn-full" disabled>Clear Cart</button>
+
+          <p class="summary-note">
+            * Scan the QR code to view payment amount. This is a demo billing system.
+          </p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="year"></span> South Spice Restaurant. All rights reserved.</p>
+      <p class="footer-subtext">Crafted with ❤ for authentic South Indian cuisine lovers.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+
